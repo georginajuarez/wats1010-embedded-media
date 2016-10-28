@@ -1,10 +1,183 @@
-/******************************************************************************
- * WATS1010: Introduction to Web Development
- * Embedded Media Assignment
- *
- * Site Styles
- *****************************************************************************/
+/*Commented out code, saved for future changes w/ Snowfall effect. Embed media (do I need to compress audio?). Share letters vertical. Have monkey loop in header like Snowfall. Comment out bg colors for presentation.*/
 
- html {
-     color: green;
- }
+html {
+  background-color: #333;
+}
+
+body {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 20px;
+  /* f-s and l-h makes all text easier to read*/
+  line-height: 1.5em;
+  margin: 0;
+  background-color: rgba(255, 240, 245, .75)
+}
+
+header {
+  /*display: block;
+  position: fixed;
+  width: 1024px;  add p and w to get snowfall effect
+  height: 443px;*/
+  min-height: 400px;
+  background-image: url("../img/monkaa_title.jpg");
+  /*jpg chosen due to gradients and details of image and file size*/
+  background-position: center center;
+  background-size: cover;
+}
+
+header h1 {
+  margin: 58px 0 0 15px;
+}
+
+header p {
+  margin: 0 0 0 15px;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.main-nav li {
+  float: left;
+}
+
+ul.main-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+
+ul.main-nav li a:hover {
+  background-color: #111;
+}
+
+
+/*:hover Moves the social links to the right & pop out right-side. Try to get it to pop out as a semi-rounded box w/ icons.*/
+
+aside#social {
+  background-color: lighten;
+  /*change to lighten for transparancy*/
+  position: fixed;
+  /*changed absolute to fixed so links can stay w/ users at all times*/
+  top: 25px;
+  right: 0;
+  width: 25px;
+  transition: 2s width;
+  margin-top: 21px;
+}
+
+aside#social:hover {
+  width: 150px;
+}
+
+
+/*aside h2 {
+  margin: 5px 0 5px 15px; 
+}*/
+
+aside#social h2 {
+  /*allows h2 to diplay vertically*/
+  transform: rotate(90deg);
+  transform-origin: top left 0;
+  margin: 15px 0 5px 15px;
+}
+
+
+/*will need to change last margin to 28px if decide to rotate*/
+
+ul.social-links {
+  list-style-type: none;
+  margin: 0 10px 0 20px;
+}
+
+
+/*for snowfall effect
+section#watch {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}*/
+
+h2 {
+  text-transform: uppercase;
+}
+
+section#watch {
+  /*background-color: lightgoldenrodyellow;*/
+  margin: 75px;
+  padding: 0;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  border: 5px ridge #ff9999;
+}
+
+.download-button {
+  color: white;
+  padding: 5px 10px;
+  background-color: #ff9999;
+  /*pink color*/
+  border: 2px inset #ff9999;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: #854766;
+}
+
+section#listen {
+  /*background-color: lightslategray;*/
+  margin: 75px;
+  padding: 0;
+}
+
+audio {
+  border: 5px ridge #ff9999;
+}
+
+section#about {
+  /*background-color: lightpink;*/
+  margin: 75px;
+  padding: 0;
+}
+
+ul.weybec-people {
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.weybec-people li {
+  display: inline-block;
+  margin: 50px;
+}
+
+img.headshot {
+  border: 5px solid #ff9999;
+  border-radius: 75%;
+  height: 150px;
+  width: auto;
+}
+
+a:visited {
+  color: white;
+}
+
+footer {
+  /*background-color: lavenderblush;*/
+  text-align: center;
+}
